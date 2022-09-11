@@ -24,10 +24,6 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/source'
-            },
-            {
-                test: /\.gagi?$/i,
-                type: 'asset/source'
             }
         ],
     },

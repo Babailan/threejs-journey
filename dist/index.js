@@ -14,47 +14,20 @@
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (() => {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar naruto_gagi_1 = __importDefault(__webpack_require__(/*! ./declaration/naruto.gagi */ \"./src/declaration/naruto.gagi\"));\r\nconsole.log(naruto_gagi_1.default);\r\n\n\n//# sourceURL=webpack://threejs-journey/./src/index.ts?");
+eval("\r\nfunction cutTheSticks(arr) {\r\n    // Write your code here\r\n    function ha(arr, cutSticks) {\r\n        var cs = cutSticks ? cutSticks : [];\r\n        var newArr = [];\r\n        arr.sort(function (a, b) { return a - b; });\r\n        var m = arr[0];\r\n        if (arr.length > 0) {\r\n            cs.push(arr.length);\r\n            for (var i = 0; i < arr.length; i++) {\r\n                var x = arr[i] - m;\r\n                if (x > 0) {\r\n                    newArr.push(x);\r\n                }\r\n                ;\r\n            }\r\n            return ha(newArr, cs);\r\n        }\r\n        else {\r\n            return cs;\r\n        }\r\n    }\r\n    return ha(arr);\r\n}\r\nconsole.log(cutTheSticks([5, 4, 4, 2, 2, 8]));\r\n\n\n//# sourceURL=webpack://threejs-journey/./src/index.ts?");
 
-/***/ }),
-
-/***/ "./src/declaration/naruto.gagi":
-false
+/***/ })
 
 /******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.ts");
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/index.ts"]();
 /******/ 	
 /******/ })()
 ;
