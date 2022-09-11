@@ -1,3 +1,2 @@
-import YES from "./lines/first";
-
-console.log(YES)
+import f from './declaration/naruto.gagi';
+console.log(f)

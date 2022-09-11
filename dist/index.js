@@ -16,19 +16,12 @@
   \**********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar first_1 = __importDefault(__webpack_require__(/*! ./lines/first */ \"./src/lines/first.ts\"));\r\nconsole.log(first_1.default);\r\n\n\n//# sourceURL=webpack://threejs-journey/./src/index.ts?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar naruto_gagi_1 = __importDefault(__webpack_require__(/*! ./declaration/naruto.gagi */ \"./src/declaration/naruto.gagi\"));\r\nconsole.log(naruto_gagi_1.default);\r\n\n\n//# sourceURL=webpack://threejs-journey/./src/index.ts?");
 
 /***/ }),
 
-/***/ "./src/lines/first.ts":
-/*!****************************!*\
-  !*** ./src/lines/first.ts ***!
-  \****************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar arr = [1, 23, 2, 4, 5, 5];\r\nfunction YES() {\r\n    arr.reduce(function (previous, current) {\r\n        return previous + current;\r\n    });\r\n}\r\nexports[\"default\"] = YES;\r\n\n\n//# sourceURL=webpack://threejs-journey/./src/lines/first.ts?");
-
-/***/ })
+/***/ "./src/declaration/naruto.gagi":
+false
 
 /******/ 	});
 /************************************************************************/

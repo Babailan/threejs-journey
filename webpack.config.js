@@ -6,8 +6,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
     },
     mode: 'development',
+    devtool: 'eval',
     resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
+        // Add `.ts` and `.tsx` as a resolvable extension.
+        extensions: [".ts", ".tsx", ".js"]
     },
     module: {
         rules: [
@@ -16,10 +18,17 @@ module.exports = {
                 use: [{ loader: 'style-loader', options: { injectType: 'styleTag' } }, 'css-loader'],
             },
             {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-                exclude: /node_modules/,
+                test: /\.tsx?$/i,
+                use: ['ts-loader']
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/source'
+            },
+            {
+                test: /\.gagi?$/i,
+                type: 'asset/source'
+            }
         ],
     },
 }
